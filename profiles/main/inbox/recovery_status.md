@@ -1,23 +1,29 @@
-# Recovery Status — 2026-05-11T23:30:47
+# Recovery Status — 2026-05-12T02:00
 
-## Detection
-- **1 failure detected** (0 critical)
-- Profile: `research`
-- Type: stall (no new run receipt in 115.8 min; threshold: 60 min)
-- Last receipt: `2026-05-11T21:35:05.642196`
+## Detection Summary
+- **Failures detected:** 1
+- **Critical:** 0
+- **Repaired:** 0 / 1 failed
 
-## Repair Attempted
-- Action: `hermes cron run research-loop`
-- Outcome: **failed** — repair did not succeed
+## Failure Details
+
+### research (stall) — WARNING
+| Field | Value |
+|-------|-------|
+| Type | stall |
+| Profile | research |
+| Last receipt | 2026-05-12T00:06:05.505440 |
+| Elapsed | 114.4 min |
+| Threshold | 60 min |
+| Severity | warning |
+| Repair attempt | `hermes cron run research-loop` |
+| Repair outcome | **FAILED** |
+
+## Action Taken
+Repair attempt to re-trigger `research-loop` via `hermes cron` did not succeed. Manual review may be required if the stall persists past next cycle.
 
 ## Compounding
-- Pattern logged to `state/recipes.log`
-- Repair recipe will be available for future `stall+research` failures
+Pattern log updated. Recipe not yet available for this failure type.
 
-## Resolution Needed
-Research phase has been stalled for ~2 hours. Manual intervention or re-trigger required.
-
-## System Status
-- `detect.py` exit code: 1 (failures present)
-- `recover_monitor.py` completed pass
-- Cron job `7cd072a2564d` will retry in 15 min
+## Next Run
+Scheduled cron will re-check in ~15 min.

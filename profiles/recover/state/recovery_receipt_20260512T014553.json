@@ -1,0 +1,26 @@
+{
+  "phase": "repair",
+  "timestamp": "2026-05-12T01:45:53.324121",
+  "result": {
+    "timestamp": "2026-05-12T01:45:53.321476",
+    "results": [
+      {
+        "failure": {
+          "type": "stall",
+          "profile": "research",
+          "last_receipt": "2026-05-12T00:06:05.505440",
+          "elapsed_minutes": 99.8,
+          "threshold_minutes": 60,
+          "severity": "warning"
+        },
+        "repair": {
+          "outcome": "failed",
+          "action": "hermes cron run research-loop"
+        }
+      }
+    ],
+    "total_failures": 1,
+    "repaired": 0,
+    "failed": 1
+  }
+}

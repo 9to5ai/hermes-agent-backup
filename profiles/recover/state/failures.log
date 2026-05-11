@@ -36,3 +36,18 @@
 [2026-05-11T23:15:43.766110] {"type": "deadlock", "profile": "qa", "repeat_count": 10, "severity": "critical"}
 [2026-05-11T23:30:47.166144] {"type": "stall", "profile": "research", "last_receipt": "2026-05-11T21:35:05.642196", "elapsed_minutes": 115.7, "threshold_minutes": 60, "severity": "warning"}
 [2026-05-11T23:30:52.569752] {"type": "stall", "profile": "research", "last_receipt": "2026-05-11T21:35:05.642196", "elapsed_minutes": 115.8, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-11T23:45:22.762484] {"type": "stall", "profile": "research", "last_receipt": "2026-05-11T21:35:05.642196", "elapsed_minutes": 130.3, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-12T00:15:40.051010] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-12T00:15:40.051019] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-12T00:15:40.051023] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-12T00:15:40.051026] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-12T00:15:40.051028] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-12T01:15:53.761121] {"type": "stall", "profile": "research", "last_receipt": "2026-05-12T00:06:05.505440", "elapsed_minutes": 69.8, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-12T01:30:23.070096] {"type": "stall", "profile": "research", "last_receipt": "2026-05-12T00:06:05.505440", "elapsed_minutes": 84.3, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-12T01:30:23.070110] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-12T01:30:23.070114] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-12T01:30:23.070118] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-12T01:30:23.070121] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-12T01:30:23.070124] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-12T01:45:53.290498] {"type": "stall", "profile": "research", "last_receipt": "2026-05-12T00:06:05.505440", "elapsed_minutes": 99.8, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-12T02:00:26.940558] {"type": "stall", "profile": "research", "last_receipt": "2026-05-12T00:06:05.505440", "elapsed_minutes": 114.4, "threshold_minutes": 60, "severity": "warning"}
