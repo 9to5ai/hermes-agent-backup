@@ -1,0 +1,6 @@
+RECIPE:{"type": "stall", "profile": "research", "cause": "unknown", "fix": "hermes cron run research-loop", "success": false, "confidence": 0.5, "timestamp": "2026-05-11T23:30:47.197071"}
+RECIPE:{"type": "deadlock", "profile": "research", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-11T23:17:08.919358"}
+RECIPE:{"type": "deadlock", "profile": "subc", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-11T23:17:08.919833"}
+RECIPE:{"type": "deadlock", "profile": "main", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-11T23:17:08.920532"}
+RECIPE:{"type": "deadlock", "profile": "coder", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-11T23:17:08.921218"}
+RECIPE:{"type": "deadlock", "profile": "qa", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-11T23:17:08.921879"}

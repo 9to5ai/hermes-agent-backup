@@ -1,0 +1,7 @@
+{
+  "type": "reset",
+  "profile": "qa",
+  "reason": "deadlock_detected",
+  "timestamp": "2026-05-11T23:17:08.921669",
+  "repeat_count": 10
+}

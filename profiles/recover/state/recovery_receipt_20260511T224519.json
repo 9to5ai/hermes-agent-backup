@@ -1,0 +1,20 @@
+{
+  "phase": "canary_coder",
+  "timestamp": "2026-05-11T22:45:19.951032",
+  "result": {
+    "outcome": "all_passed",
+    "profile": "coder",
+    "canaries_run": 1,
+    "results": [
+      {
+        "canary": "sample_canary.py",
+        "profile": "coder",
+        "outcome": "pass",
+        "elapsed_seconds": 0.03,
+        "stdout": "PASS: Vault accessible\nPASS: Last receipt: 70min ago\nPASS: Subc room accessible\n",
+        "stderr": "",
+        "timestamp": "2026-05-11T22:45:19.948232"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{"timestamp": "2026-05-11T22:45:20.024309", "total_failures": 6, "total_repairs": 0, "by_type": {"stall": 1, "deadlock": 5}, "repair_outcomes": {}, "most_common_failure": "deadlock", "repair_success_rate": 0.0}
+{"timestamp": "2026-05-11T23:00:20.418062", "total_failures": 18, "total_repairs": 0, "by_type": {"stall": 3, "deadlock": 15}, "repair_outcomes": {}, "most_common_failure": "deadlock", "repair_success_rate": 0.0}
+{"timestamp": "2026-05-11T23:15:32.876932", "total_failures": 30, "total_repairs": 0, "by_type": {"stall": 5, "deadlock": 25}, "repair_outcomes": {}, "most_common_failure": "deadlock", "repair_success_rate": 0.0}
+{"timestamp": "2026-05-11T23:30:47.219813", "total_failures": 37, "total_repairs": 8, "by_type": {"stall": 7, "deadlock": 30}, "repair_outcomes": {"failed": 3, "success": 5}, "most_common_failure": "deadlock", "repair_success_rate": 62.5}

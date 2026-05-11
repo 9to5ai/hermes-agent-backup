@@ -1,0 +1,16 @@
+{
+  "last_states": {
+    "research": "{}",
+    "subc": "{}",
+    "main": "{}",
+    "coder": "{}",
+    "qa": "{}"
+  },
+  "loop_count": {
+    "research": 2,
+    "subc": 2,
+    "main": 2,
+    "coder": 2,
+    "qa": 2
+  }
+}

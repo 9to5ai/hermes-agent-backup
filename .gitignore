@@ -1,0 +1,22 @@
+# Exclude large binary/state files
+state.db
+state.db-shm
+state.db-wal
+.DS_Store
+.env
+.youtube_cookies.txt
+kanban.db
+
+# Exclude caches and logs
+cache/
+logs/
+audio_cache/
+image_cache/
+sessions/
+
+# Exclude process state
+processes.json
+gateway.lock
+gateway.pid
+*.pid
+*.lock

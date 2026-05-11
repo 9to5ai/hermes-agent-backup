@@ -1,0 +1,152 @@
+{
+  "updated_at": "2026-05-11T23:35:14.595413",
+  "platforms": {
+    "telegram": [
+      {
+        "id": "925542650",
+        "name": "Jun M",
+        "type": "dm",
+        "thread_id": null
+      },
+      {
+        "id": "-1003863510403:2711",
+        "name": "Momo's Warren / topic 2711",
+        "type": "group",
+        "thread_id": "2711"
+      },
+      {
+        "id": "-1003863510403:6512",
+        "name": "Momo's Warren / topic 6512",
+        "type": "group",
+        "thread_id": "6512"
+      },
+      {
+        "id": "-1003432224755",
+        "name": "Momo's Home",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "-1003966589836:2",
+        "name": "Momo's Home / topic 2",
+        "type": "group",
+        "thread_id": "2"
+      },
+      {
+        "id": "-1003966589836:18",
+        "name": "Momo's Home / topic 18",
+        "type": "group",
+        "thread_id": "18"
+      },
+      {
+        "id": "-1003966589836:321",
+        "name": "Momo's Home / topic 321",
+        "type": "group",
+        "thread_id": "321"
+      },
+      {
+        "id": "-1003966589836:337",
+        "name": "Momo's Home / topic 337",
+        "type": "group",
+        "thread_id": "337"
+      },
+      {
+        "id": "-1003966589836:626",
+        "name": "Momo's Home / topic 626",
+        "type": "group",
+        "thread_id": "626"
+      },
+      {
+        "id": "-1003725959540",
+        "name": "Momo & Ling",
+        "type": "group",
+        "thread_id": null
+      },
+      {
+        "id": "-1003966589836:789",
+        "name": "Momo's Home / topic 789",
+        "type": "group",
+        "thread_id": "789"
+      },
+      {
+        "id": "-1003966589836:794",
+        "name": "Momo's Home / topic 794",
+        "type": "group",
+        "thread_id": "794"
+      },
+      {
+        "id": "-1003966589836:920",
+        "name": "Momo's Home / topic 920",
+        "type": "group",
+        "thread_id": "920"
+      },
+      {
+        "id": "-1003966589836:1235",
+        "name": "Momo's Home / topic 1235",
+        "type": "group",
+        "thread_id": "1235"
+      },
+      {
+        "id": "-1003966589836:1264",
+        "name": "Momo's Home / topic 1264",
+        "type": "group",
+        "thread_id": "1264"
+      },
+      {
+        "id": "-1003966589836:1506",
+        "name": "Momo's Home / topic 1506",
+        "type": "group",
+        "thread_id": "1506"
+      },
+      {
+        "id": "-1003966589836:1599",
+        "name": "Momo's Home / topic 1599",
+        "type": "group",
+        "thread_id": "1599"
+      },
+      {
+        "id": "-1003966589836:1751",
+        "name": "Momo's Home / topic 1751",
+        "type": "group",
+        "thread_id": "1751"
+      },
+      {
+        "id": "-1003966589836:1821",
+        "name": "Momo's Home / topic 1821",
+        "type": "group",
+        "thread_id": "1821"
+      },
+      {
+        "id": "-1003966589836:2171",
+        "name": "Momo's Home / topic 2171",
+        "type": "group",
+        "thread_id": "2171"
+      },
+      {
+        "id": "-1003966589836:2609",
+        "name": "Momo's Home / topic 2609",
+        "type": "group",
+        "thread_id": "2609"
+      }
+    ],
+    "discord": [],
+    "whatsapp": [],
+    "slack": [],
+    "signal": [],
+    "mattermost": [],
+    "matrix": [],
+    "homeassistant": [],
+    "email": [],
+    "sms": [],
+    "dingtalk": [],
+    "feishu": [],
+    "wecom": [],
+    "wecom_callback": [],
+    "weixin": [],
+    "bluebubbles": [],
+    "qqbot": [],
+    "yuanbao": [],
+    "irc": [],
+    "teams": []
+  }
+}
