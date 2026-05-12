@@ -1,0 +1,49 @@
+{
+  "phase": "detect",
+  "timestamp": "2026-05-12T23:45:27.982019",
+  "result": {
+    "timestamp": "2026-05-12T23:45:27.979196",
+    "failures": [
+      {
+        "type": "stall",
+        "profile": "research",
+        "last_receipt": "2026-05-12T18:08:28.723991",
+        "elapsed_minutes": 337.0,
+        "threshold_minutes": 60,
+        "severity": "critical"
+      },
+      {
+        "type": "deadlock",
+        "profile": "research",
+        "repeat_count": 5,
+        "severity": "critical"
+      },
+      {
+        "type": "deadlock",
+        "profile": "subc",
+        "repeat_count": 5,
+        "severity": "critical"
+      },
+      {
+        "type": "deadlock",
+        "profile": "main",
+        "repeat_count": 5,
+        "severity": "critical"
+      },
+      {
+        "type": "deadlock",
+        "profile": "coder",
+        "repeat_count": 5,
+        "severity": "critical"
+      },
+      {
+        "type": "deadlock",
+        "profile": "qa",
+        "repeat_count": 5,
+        "severity": "critical"
+      }
+    ],
+    "total": 6,
+    "critical": 6
+  }
+}

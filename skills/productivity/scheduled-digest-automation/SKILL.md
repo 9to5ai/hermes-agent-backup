@@ -91,7 +91,7 @@ Common failure modes:
 4. Dynamic pages with stale DOM selectors.
 5. Trackers that deadlock on their own lock file.
 6. Browser navigation tool attaches to/reports a stale tab even after `browser_navigate` succeeds.
-7. YouTube playlist DOM changes: `ytd-playlist-video-renderer` can be absent while videos are rendered under newer lockup components. **Always use `playlist_watcher_check.py check` (yt-dlp) first** — it is authoritative and has never failed.
+7. YouTube playlist DOM changes: `ytd-playlist-video-renderer` can be absent while videos are rendered under newer lockup components. **Always use `playlist_watcher_check.py check` (yt-dlp) first** — it is authoritative and has never failed. In cron environments, invoke with `PATH="/opt/homebrew/bin:$PATH"` prepended or `yt-dlp` will not be found.
 8. Gemini CDP session dies post-submission — a known YouTube/playlist watcher failure mode. When this happens, **use `yt-dlp --write-auto-sub --sub-lang en --skip-download` to pull the VTT transcript**. Parse with the recipe in `references/playlist-watcher.md`. This is a first-class note source, not a degraded fallback.
 
 Fallbacks:

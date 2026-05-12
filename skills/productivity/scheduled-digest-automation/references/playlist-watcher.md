@@ -128,12 +128,15 @@ The browser's `ytd-playlist-video-renderer`/`a#video-title` selectors are unreli
 
 **Primary method — `check` (yt-dlp):**
 ```bash
-python3 /Users/momo/.hermes/scripts/playlist_watcher_check.py check
+PATH="/opt/homebrew/bin:$PATH" python3 /Users/momo/.hermes/scripts/playlist_watcher_check.py check
 ```
 - Fetches full playlist via `yt-dlp`, compares against tracker, prints `NEW|id|title` for each unprocessed video
 - Does NOT modify state — safe to run repeatedly
-- **Silent if nothing new**
+- **`check` exit 0 + stdout empty = no new videos** — this is the clean "nothing new" signal, NOT an error
 - `status` only prints counts (`TOTAL`, `LAST_CHECKED`) — never use it to check for new videos
+- **PATH is required**: the script calls `yt-dlp` as a bare subprocess without a full path; cron environments often lack `/opt/homebrew/bin` in PATH. Always invoke with `PATH="/opt/homebrew/bin:$PATH"` prepended.
+
+> **Playlist count mismatch (normal):** If yt-dlp returns fewer videos than the tracker's `TOTAL` (e.g. 630 vs 639), playlist entries have been removed. This is expected — `check`-reported items are the only genuinely new ones.
 
 **Secondary method — direct yt-dlp when `check` is unavailable:**
 ```bash

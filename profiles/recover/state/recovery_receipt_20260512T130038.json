@@ -1,0 +1,10 @@
+{
+  "phase": "detect",
+  "timestamp": "2026-05-12T13:00:38.369687",
+  "result": {
+    "timestamp": "2026-05-12T13:00:38.366887",
+    "failures": [],
+    "total": 0,
+    "critical": 0
+  }
+}

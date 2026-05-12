@@ -56,8 +56,22 @@ The terminal command will block waiting for browser completion. Once the user au
 Codex tokens expire and must be refreshed. If you see errors like:
 - `Failed to refresh token: Your access token could not be refreshed because your refresh token was already used`
 - `401 Unauthorized` on `wss://api.openai.com/v1/responses`
+- `Could not resolve credentials for provider 'OpenAI Codex': Codex refresh token was already consumed by another client (e.g. Codex CLI or VS Code extension)`
 
-**Fix:** `codex logout` then `codex login --device-auth`.
+**Fix when Codex token is "exhausted":** Do NOT run `codex login` again — the token was already consumed by another client. Instead, reset the cooldown in Hermes Agent's credential pool:
+
+```bash
+# Use the hermes-agent venv Python (not the project venv)
+# Run: hermes auth → option 3 (Reset cooldowns) → enter provider name
+```
+
+If the hermes binary is broken (e.g. `TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'`), use the venv Python directly:
+```bash
+/Users/momo/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main auth
+# Then: 3 → openai-codex → 5 (exit)
+```
+
+After reset, the existing OAuth device code credential becomes active again without needing to re-authenticate via browser.
 
 ### API key auth (alternative)
 ```

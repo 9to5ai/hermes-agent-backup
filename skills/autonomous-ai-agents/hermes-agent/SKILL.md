@@ -584,11 +584,17 @@ terminal(command="tmux new-session -d -s resumed 'hermes --resume 20260225_14305
 2. Some tools need env vars (check `.env`)
 3. `/reset` after enabling tools
 
-### Model/provider issues
-1. `hermes doctor` — check config and dependencies
-2. `hermes login` — re-authenticate OAuth providers
-3. Check `.env` has the right API key
-4. **Copilot 403**: `gh auth login` tokens do NOT work for Copilot API. You must use the Copilot-specific OAuth device code flow via `hermes model` → GitHub Copilot.
+### Re-authenticate OAuth providers (openai-codex, nous, etc.)
+If the `hermes` binary crashes (e.g. `TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'` — Python 3.9 vs 3.11 syntax incompatibility), use the bundled venv Python directly:
+
+```bash
+# Interactive auth menu via venv Python (avoids broken hermes symlink)
+/Users/momo/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main auth
+```
+
+Then navigate: `3` (Reset cooldowns) → `openai-codex` → `5` (Exit). This resets the OAuth device code credential without needing to re-authenticate via browser.
+
+For Codex specifically: if the device code shows as "exhausted", the token was consumed by another client (Codex CLI or VS Code extension). **Do NOT run `codex login` again** — the fix is resetting the cooldown in Hermes's credential pool, not a new login flow.
 
 ### Changes not taking effect
 - **Tools/skills:** `/reset` starts a new session with updated toolset

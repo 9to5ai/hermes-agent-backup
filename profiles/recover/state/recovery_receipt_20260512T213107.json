@@ -1,0 +1,19 @@
+{
+  "phase": "detect",
+  "timestamp": "2026-05-12T21:31:07.980588",
+  "result": {
+    "timestamp": "2026-05-12T21:31:07.978599",
+    "failures": [
+      {
+        "type": "stall",
+        "profile": "research",
+        "last_receipt": "2026-05-12T18:08:28.723991",
+        "elapsed_minutes": 202.7,
+        "threshold_minutes": 60,
+        "severity": "critical"
+      }
+    ],
+    "total": 1,
+    "critical": 1
+  }
+}

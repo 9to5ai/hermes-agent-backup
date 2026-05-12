@@ -73,7 +73,13 @@ With recovery: the system detects, repairs, and learns.
 
 ## Implementation Notes (2026-05-11)
 
-**Market validation:** `references/market-research.md` — Armorer launched on HN 2hrs before our sweep found it; confirms the control plane space is hot and the recovery gap is real.
+**Market validation (updated 2026-05-12):** The recovery gap is now confirmed against:
+- OpenHands Enterprise (72K stars, May 2026) — isolation/audit present, recovery absent
+- CSAI AARM + Agentic Trust Framework (Apr 2026) — prevention/audit only, no rollback
+- AgentHelm (task resumption) + Vyuha AI (SRE recovery) — adjacent problems, not data-undo
+- PocketOS incident (April 2026) — 9-second DB + backup destruction; human-in-the-loop insufficient
+
+The specific gap is now precisely defined: **undoing a destructive action an agent performed within its authorized scope.**
 
 ### Python 3.9 Compatibility
 Uses `Optional[]` from typing module instead of `type | None` union syntax (not supported in Python 3.9). Always import:

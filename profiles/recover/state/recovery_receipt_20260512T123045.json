@@ -1,0 +1,72 @@
+{
+  "phase": "repair",
+  "timestamp": "2026-05-12T12:30:45.979889",
+  "result": {
+    "timestamp": "2026-05-12T12:30:45.976839",
+    "results": [
+      {
+        "failure": {
+          "type": "deadlock",
+          "profile": "research",
+          "repeat_count": 5,
+          "severity": "critical"
+        },
+        "repair": {
+          "outcome": "success",
+          "action": "reset_injected"
+        }
+      },
+      {
+        "failure": {
+          "type": "deadlock",
+          "profile": "subc",
+          "repeat_count": 5,
+          "severity": "critical"
+        },
+        "repair": {
+          "outcome": "success",
+          "action": "reset_injected"
+        }
+      },
+      {
+        "failure": {
+          "type": "deadlock",
+          "profile": "main",
+          "repeat_count": 5,
+          "severity": "critical"
+        },
+        "repair": {
+          "outcome": "success",
+          "action": "reset_injected"
+        }
+      },
+      {
+        "failure": {
+          "type": "deadlock",
+          "profile": "coder",
+          "repeat_count": 5,
+          "severity": "critical"
+        },
+        "repair": {
+          "outcome": "success",
+          "action": "reset_injected"
+        }
+      },
+      {
+        "failure": {
+          "type": "deadlock",
+          "profile": "qa",
+          "repeat_count": 5,
+          "severity": "critical"
+        },
+        "repair": {
+          "outcome": "success",
+          "action": "reset_injected"
+        }
+      }
+    ],
+    "total_failures": 5,
+    "repaired": 5,
+    "failed": 0
+  }
+}

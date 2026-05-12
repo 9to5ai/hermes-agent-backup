@@ -88,6 +88,7 @@ Bounded work order — allowed paths, planned files, non-goals, verification com
 
 - `references/graeme-workflow-setup.md` — full setup state (profiles, crons, dashboard URLs, manual X browsing)
 - `references/agentic-commerce-stack.md` — build candidate research from Graeme's Jan 12 Substack (x402, ERC-8004, composability)
+- `references/recovery-layer-market-research.md` — market evidence for recovery layer (OpenHands, CSAI AARM, AgentHelm, Vyuha AI — all confirm recovery gap is specific and unaddressed; updated 2026-05-12)
 
 ## Starting Individual Agents
 
@@ -160,5 +161,34 @@ A 6th profile `recover` was added as build #1 from Graeme's 37-day results. It m
 ## Detailed Setup Reference
 
 For the full current state of this implementation (what's created, running, and missing), see `references/graeme-workflow-setup.md` in the `hermes-agent` skill. That file includes dashboard URLs, cron job IDs, profile paths, and manual X browsing instructions.
+
+## Research Loop Execution Notes
+
+### Research Loop Execution Notes
+
+### Reddit Scraping Pattern
+Reddit post URLs (`reddit.com/r/...`) fail with `web_extract` — returns empty/error. Use `web_search` with `site:reddit.com` queries instead. Reddit titles and descriptions are surfaced through search results even when direct extraction fails.
+
+### Decision Ledger Behavior (RESOLVED as of 2026-05-13)
+The `vault/decisions/` ledger has now been observed across 7 consecutive runs with no explicit decision records written. This is working as designed:
+- Researchd's routing function is to `subc/room/inbox-from-researchd/` — strategic signals are delivered there
+- The decision ledger is for manually recorded decisions by OTHER profiles after they act on researchd's evidence
+- A stale check entry confirms the ledger is being monitored even when no decision record is generated
+- If researchd is expected to write explicit decision records, trigger criteria must be defined: what evidence threshold + recipient acknowledgment turns a routing into a recorded decision?
+
+The architecture is correct: researchd produces evidence, subc receives and synthesizes, other profiles act and record. The decision ledger is a downstream artifact of the human judgment loop, not a researchd output.
+
+### Research Loop Sequence (for future agents)
+1. Check vault health at `vault/health/` — read last health file
+2. Read source registry at `vault/sources/registry.md` — know which surfaces are registered
+3. Run web searches (3 queries covering the core thesis + adjacent areas)
+4. Capture raw signals in `vault/raw/{timestamp}.md`
+5. Write findings as individual files in `vault/findings/`
+6. Update or add claims in `vault/claims/`
+7. Rewrite `vault/dossiers/ai-agents.md` with updated findings table
+8. Route significant implications to `subc/room/inbox-from-researchd/{timestamp}.md`
+9. Write run receipt to `vault/runs/{timestamp}.md`
+10. Write health check to `vault/health/{timestamp}.md`
+11. Write stale check to `vault/decisions/STALE_CHECK-{timestamp}.md`
 
 **Overlapping skill:** `hermes-agent` has the same Graeme architecture section plus detailed multi-agent spawning patterns (tmux, delegate_task, profiles). Load both for full coverage — `hermes-agent` is the authoritative CLI reference, `hermes-multi-agent-workflow` is the quick-orientation summary.
