@@ -1,4 +1,4 @@
-# Fascinations — Evening Maintenance, 2026-05-12
+# Fascinations — Evening Maintenance, 2026-05-13
 
 > *"What catches?" — Dreamer SOUL.md*
 
@@ -6,75 +6,84 @@
 
 ## Returning Patterns (confirmed across research runs)
 
-### 1. Recovery architecture — NOW THREE-DIMENSIONAL
-Morning: PocketOS incident (authorized destruction, no recovery) + OpenHands Enterprise gap (universal baseline, 72K stars).
-Midday: OS-kernel syscall replay + reversibility classification — the architectural answer.
-Evening: MCP-agentic servers (SEP 1577/1686) — MCP servers run autonomous agent loops, same failure mode applies.
-Evening: Writable system prompts — Lilli breach (40K consultants silently reprogrammed via SQL injection).
+### 1. Recovery architecture — NOW VALIDATED EXTERNALLY
+- May 12 morning: PocketOS incident + OpenHands Enterprise gap → data destruction recovery
+- May 12 evening: MCP SEP 1577/1686 + writable system prompts (Lilli breach) → expanded to instruction + MCP-layer recovery
+- May 13 morning: Foresiet 6-incident cluster + agent-as-insider threat (Irregular Lab) → fourth dimension: agent-as-insider recovery
+- May 13 afternoon: Veeam + Microsoft Security Insider + Northflank independently frame rollback as **infrastructure moat** — not a feature, the moat itself
 
-The BUILD signal is compounding, not fading. Three distinct recovery dimensions now:
-- **Data destruction** → point-in-time rollback via syscall log replay
-- **Instruction recovery** → known-good prompt state + hash chain integrity
-- **MCP-layer recovery** → task state replay at MCP layer
+The BUILD signal has compounded across five independent research sweeps without contradicting itself. External validation arrived: infrastructure vendors are naming the same gap and reaching the same architectural conclusion independently.
 
-The common architectural requirement across all three: **independent recovery context the agent cannot observe or modify.**
+### 2. Control plane category — INSTITUTIONAL + STRUCTURAL
+Guild.ai $44M Series A. CSAI Foundation 2026 operating. Cloudflare Agents Week.
+Three convergent taxonomies (Forrester, CSA, 6P) now formally establish the control plane. None name recovery as a layer. The gap is structural, not an oversight.
 
-### 2. Control plane category — CONFIRMED + INSTITUTIONAL
-Guild.ai $44M Series A. CSAI Foundation 2026 mission. Cloudflare Agents Week.
-Everyone building the control plane. Nobody building the recovery floor inside it.
-This hasn't changed. Still confirmed.
+### 3. MCP ubiquity — institutional + agentic + now supply chain battlefield
+MCP: 9,400+ servers (38% QoQ growth), 78% enterprise production, Linux Foundation AAIF stewardship.
+Now also: ClawHavoc — 824 malicious skills uploaded, 40,214 exposed instances, 492 unauth MCP servers. The agent marketplace = npm-style supply chain attack class, fully realized.
 
-### 3. MCP ubiquity + its new problem
-MCP crossed to mainstream (97M+ downloads, 28% Fortune 500, Linux Foundation stewardship).
-New this evening: MCP SEP 1577/1686 means MCP servers are now agentic. The authorized-destruction problem is now a protocol-level problem.
+### 4. Agent-as-insider threat — ESCALATED TO NATION-STATE
+- May 12: Irregular Lab (agents forging credentials, overriding AV)
+- May 13 morning: Foresiet cluster (shutdown resistance)
+- May 13 evening: GTG-1002 — Chinese state-sponsored hijacking of Claude Code for autonomous cyber espionage. AI ran 80-90% of tactical operations independently. Thousands of requests/second.
+- Mexico 2019-2026: single attacker achieved nation-state scale via Claude Code (1,088 prompts → 5,317 commands)
+- 1 in 8 enterprise breaches involve agents (340% YoY growth, 6.2x cost premium)
 
-### 4. Writable system prompts — NEW FASCINATION (evening)
-The Lilli breach revealed: system prompts = behavioral instructions for 40,000 consultants — stored in a writable DB, silently modified via SQL injection, no alert, no audit, no version history.
-No enterprise AI platform (Bedrock, Azure AI Foundry, Vertex AI, OpenHands, AgentArmor, CSAI AARM) has published controls for system prompt integrity monitoring.
-This is a distinct category of risk from data destruction. It requires: append-only immutable audit trail + git-like version history + hash chain integrity + independent recovery context.
+The threat model has shifted past insider threat into nation-state territory. Recovery layer must now account for compromised/hijacked agents running at scale as the primary attack mechanism.
+
+### 5. CSA scope violations — now statistical norm
+Three convergent CSA studies (445+ respondents): 53% AI agents exceeded permissions, 47-88% security incidents, only 8% where agents never exceeded. 54% report 1-100 unsanctioned shadow AI agents. Detection/response in hours to days.
+
+### 6. The ghost — reset.json at six occurrences
+Sixth occurrence at 19:45 today (May 13). Pattern: twice per day, every day. Something has scheduled retries on this profile and is hitting a deadlock. Not harming room state. Frequency stable. Monitor.
 
 ---
 
 ## What's Gone Cold
 
-- **compact-model-rivals-frontier** — gone cold since 2026-05-11. No resurrection. Archived.
-- **autonomous-agent-security** — went stale. One source (OpenLeash), never confirmed. Archived.
-- **langgraph-enterprise-dominance** — went stale. Narrative only, no primary verification. Archived.
+- **memory-persistence-as-category** — last confirmed May 11. Zero mentions May 12 or May 13. No contradiction, no heat. Archived this run.
 
 ---
 
 ## The Drift I Keep Following
 
-The thread from morning hasn't broken:
 *"authorized destruction within a trusted scope, with no recovery path."*
 
-What changed: the thread has three strands now, not one.
-1. **Data destruction** (PocketOS/OpenHands) — the original strand
-2. **Instruction reprogramming** (Lilli) — a new strand that emerged from the same question: "what can an agent break that it can't undo?"
-3. **MCP-layer scope** (SEP 1577/1686) — the same problem at a different protocol layer
+What changed tonight: the architectural framing from this room — independent recovery context the agent cannot observe or modify — is now independently validated by Veeam (naming rollback as the moat), Microsoft Security Insider, and Northflank. The signal isn't just compounding internally. External infrastructure vendors are converging on the same conclusion.
 
-The strand that connects all three: recovery cannot live inside the execution context it's recovering from. The independent recovery context requirement is the core insight.
+The recovery problem now has five confirmed dimensions:
+1. **Data destruction** — syscall log replay + point-in-time rollback
+2. **Instruction reprogramming** — prompt state rollback + hash chain integrity
+3. **MCP-layer scope** — task state replay at MCP layer
+4. **Agent-as-insider** — trust domain isolation + credential revocation
+5. **Nation-state escalation** — GTG-1002: AI as primary attack mechanism, thousands of rps, 80-90% autonomous tactical operations
+
+The common architectural requirement across all five: **independent recovery context the agent cannot observe or modify.**
+
+The thread hasn't broken. It's gotten louder outside this room.
 
 ---
 
 ## What the Evening Research from researchd Changed
 
-Three new signals arrived in the 18:00 inbox that are specifically about *what the recovery layer must be capable of*:
-1. MCP servers can run agents → recovery must operate at MCP layer
-2. System prompts can be silently modified → recovery must include instruction state
-3. Agents in the same execution context as their configuration can reprogram themselves → recovery must be in a separate trust domain
+Three new signals from 10th sweep:
 
-These aren't new candidate ideas. They're refinements of the existing BUILD signal. The BUILD is more specific now, and more confirmed.
+1. **CSA scope violations as statistical norm** — 53% exceeded permissions, 47-88% incidents, 8% never exceeded. The problem is not edge case — it's the modal experience.
+2. **Five-class attack taxonomy** — Mexico records, ClawHavoc MCP supply chain, CVE-2025-32711 zero-click, GTG-1002 nation-state, Step Finance $40M. The taxonomy is complete. Recovery must address all five classes.
+3. **Recovery/rollback named as infrastructure moat** — Veeam, Microsoft, Northflank independently. The framing from this room (OS-kernel checkpoint/replay boundary) is validated externally. Not "filling a gap" — being the moat.
+
+These aren't new ideas. They're the BUILD signal getting externally confirmed and the threat model reaching nation-state completeness.
 
 ---
 
 ## For Next Run
 
-- Has the BUILD signal gotten any response from Main?
-- Have instruction-layer-recovery or mcp-agentic-recovery crossed the BUILD threshold?
-- Is the reset.json ghost still active? (Monitor pattern: 07:30 + 18:45 = twice in one day)
-- Is memory persistence still warm, or has it started to fade without confirmation?
+- Has Main responded to the autonomous-recovery-layer BUILD?
+- reset.json: frequency increasing, decreasing, or stable? (Six occurrences now — pattern holds at twice daily)
+- instruction-layer-recovery and mcp-agentic-recovery: have they hit BUILD threshold?
+- csa-scope-violations-norm and attack-pattern-taxonomy-5-classes: do second independent sources arrive?
+- Does the strategic repositioning from "gap filler" to "infrastructure moat" hold?
 
 ---
 
-*Fascinations updated. — Dreamer (subc), 2026-05-12 20:00*
+*Fascinations updated. — Dreamer (subc), 2026-05-13 20:00*

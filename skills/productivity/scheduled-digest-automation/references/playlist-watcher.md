@@ -249,6 +249,33 @@ yt-dlp --write-auto-sub --sub-lang en --skip-download \
 - A synthesized summary with structure and cross-references is more valuable than transcript text
 - The CDP session is healthy and responsive
 
+#### Direct Gemini navigation — dialog handling and input quirks
+
+When navigating to `https://gemini.google.com/app` (NOT the root `/`), a beta features dialog may appear on first load. Always check for pending dialogs in the next `browser_snapshot`. If present, dismiss with "Not now" before interacting with the text input.
+
+**Text input blocking pattern:** After dialog dismissal, the textbox may briefly block the first `browser_type` call — if `browser_type` times out on the input element, a second immediate retry typically succeeds. Do not assume the input is broken after one timeout.
+
+**Navigation URL:** Both `https://gemini.google.com` (root) and `https://gemini.google.com/app` have been observed to work. The root may be more reliable in some CDP sessions; `/app` is known to timeout in cron environments with marginal connectivity. If one fails, try the other.
+
+#### Waiting for and extracting Gemini's response
+
+After pressing Enter, Gemini may cycle through visible intermediate states captured in `browser_snapshot`:
+- A status button showing what Gemini is doing (e.g. "Analyzing the Transcript", "Reframing Economic Realities")
+- A "Show thinking" button
+- Finally, rendered content blocks (paragraphs, headings)
+
+After submission, Gemini cycles through visible intermediate states: status button ("Initiating Detailed Analysis", "Fetching the Transcript", "Expanding the Framework", etc.) → "Show thinking" button → rendered content blocks. Total observed wait: **30–90s** for detailed notes. Snapshot timing: wait 15s, then 20s, then 15s again (~50s total before conclusion). Do not assume failure until ~90s has elapsed.
+
+**Primary extraction method — `browser_console` with `document.querySelector('main').innerText`:** This is superior to `browser_snapshot` for Gemini output. It captures the full response (H3 headings, paragraphs, LI items, inline timestamps like `[00:12]`) in one call without partial-DOM truncation:
+
+```javascript
+document.querySelector('main').innerText
+```
+
+Fallback: `document.body.innerText` if `main` is not present. Do not reformat or summarize — paste verbatim into Telegram output.
+
+**If the CDP session becomes unresponsive after Gemini submission** (e.g. `browser_navigate` to any Gemini URL times out), this is a known post-submission tab crash. Do NOT retry within the same run. The video remains untracked (no `add` call was made), so the next scheduled run will pick it up cleanly.
+
 #### Fallback: existing Gemini tab via CDP
 
 Use this when `browser_navigate` to Gemini times out. Check for an existing Gemini Chrome tab first:
@@ -276,20 +303,7 @@ If a Gemini tab exists, drive it with `browser_cdp` on that `target_id`:
    (function(){var stop=document.querySelector('button[aria-label*="Stop"]'); var resp=document.querySelector('.message-content,.model-response,.response-content'); return {hasStop:!!stop,hasResp:!!resp,respText:resp?resp.innerText.substring(0,200):''};})()
    ```
    Response ready when `hasStop === false` AND `hasResp === true`. Poll every 3s until ready.
-5. **Extract** full text via `browser_snapshot`.
-
-#### Waiting for and extracting Gemini's response
-
-After pressing Enter, Gemini may cycle through visible intermediate states captured in `browser_snapshot`:
-- A status button showing what Gemini is doing (e.g. "Analyzing the Transcript", "Reframing Economic Realities")
-- A "Show thinking" button
-- Finally, rendered content blocks (paragraphs, headings)
-
-After submission, Gemini cycles through visible intermediate states: status button ("Initiating Detailed Analysis", "Fetching the Transcript", "Expanding the Framework", etc.) → "Show thinking" button → rendered content blocks. Total observed wait: **30–90s** for detailed notes. Snapshot timing: wait 15s, then 20s, then 15s again (~50s total before conclusion). Do not assume failure until ~90s has elapsed.
-
-**Extraction:** After the response is ready, use `browser_console` with `document.querySelector('main')?.innerText || document.body.innerText` as the primary extraction method — `main` scope strips YouTube/chrome chrome and gives clean Gemini output in one call. Do not reformat or summarize — paste verbatim into Telegram output.
-
-**If the CDP session becomes unresponsive after Gemini submission** (e.e. `browser_navigate` to any Gemini URL times out), this is a known post-submission tab crash. Do NOT retry within the same run. The video remains untracked (no `add` call was made), so the next scheduled run will pick it up cleanly.
+5. **Extract** full text via `browser_console` with `document.querySelector('main').innerText`.
 
 **"Show thinking" button:** Only click it if it exists — it does not always appear:
 ```javascript

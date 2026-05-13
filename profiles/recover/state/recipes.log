@@ -1,6 +1,6 @@
-RECIPE:{"type": "stall", "profile": "research", "cause": "unknown", "fix": "hermes cron run research-loop", "success": false, "confidence": 0.5, "timestamp": "2026-05-13T02:00:53.190591"}
-RECIPE:{"type": "deadlock", "profile": "research", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-13T01:00:20.887150"}
-RECIPE:{"type": "deadlock", "profile": "subc", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-13T01:00:20.887637"}
-RECIPE:{"type": "deadlock", "profile": "main", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-13T01:00:20.888195"}
-RECIPE:{"type": "deadlock", "profile": "coder", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-13T01:00:20.888637"}
-RECIPE:{"type": "deadlock", "profile": "qa", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-13T01:00:20.889104"}
+RECIPE:{"type": "stall", "profile": "research", "cause": "unknown", "fix": "hermes cron run research-loop", "success": false, "confidence": 0.5, "timestamp": "2026-05-14T02:00:56.709055"}
+RECIPE:{"type": "deadlock", "profile": "research", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-14T02:00:56.709667"}
+RECIPE:{"type": "deadlock", "profile": "subc", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-14T02:00:56.710476"}
+RECIPE:{"type": "deadlock", "profile": "main", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-14T02:00:56.711055"}
+RECIPE:{"type": "deadlock", "profile": "coder", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-14T02:00:56.711481"}
+RECIPE:{"type": "deadlock", "profile": "qa", "cause": "unknown", "fix": "reset_injected", "success": true, "confidence": 0.6, "timestamp": "2026-05-14T02:00:56.712029"}

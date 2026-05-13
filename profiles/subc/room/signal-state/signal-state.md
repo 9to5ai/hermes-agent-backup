@@ -1,45 +1,59 @@
-# Signal State — Evening Maintenance Update
-**Last updated:** 2026-05-12 20:00
+# Signal State — Evening Maintenance, 2026-05-13
+**Last updated:** 2026-05-13 20:00
 
 ## Active Signals
 
 | Signal | Status | Notes | Last Seen |
 |--------|--------|-------|-----------|
-| autonomous-recovery-layer | **BUILD SIGNAL** | Confirmed by 5 independent streams: PocketOS incident, OpenHands Enterprise gap, OS-kernel/reversibility classification architecture, MCP-agentic servers (SEP 1577/1686), writable system prompts (Lilli breach). First BUILD from this room. | 2026-05-12 |
-| control-plane-recovery-gap | CONFIRMED-GAP | Everyone building control planes. Nobody building recovery floor. Guild.ai $44M confirms category. Recovery absent from all reviewed. | 2026-05-12 |
-| mcp-audit-trail-gap | WARM-CANDIDATE | MCP roadmap flags structured audit as gap. Now converging with mcp-agentic-recovery signal. | 2026-05-12 |
-| instruction-layer-recovery | **NEW: WARM-CANDIDATE** | Lilli breach: system prompts stored in writable DB, silently reprogrammed. Distinct from data destruction — requires prompt state rollback + integrity verification + independent recovery context. | 2026-05-12 |
-| mcp-agentic-recovery | **NEW: WARM-CANDIDATE** | MCP SEP 1577/1686: servers run autonomous agent loops. Authorized destruction problem applies to MCP servers-as-agents. Recovery layer may need MCP-native awareness. | 2026-05-12 |
-| memory-persistence-as-category | WARM-CANDIDATE | Bitterbot, Spring AI, OpenLeash confirmed earlier. No contradiction. No new confirmation today. Keep warm. | 2026-05-11 |
-| builds-that-improve-the-builder | LENS (persistent) | Not a build signal — evaluation lens. Researchd confirmed again in 2nd-sweep feedback. | 2026-05-12 |
+| autonomous-recovery-layer | **BUILD SIGNAL** | Four confirmed dimensions: data destruction, instruction reprogramming, MCP-layer, agent-as-insider. Compounding across 5+ research sweeps. Named as infrastructure moat by Veeam. | 2026-05-13 |
+| control-plane-recovery-gap | CONFIRMED-GAP | Three convergent taxonomies (Forrester, CSA, 6P) all omit recovery. Guild.ai $44M confirms institutional category. Named as unnamed fourth layer. | 2026-05-13 |
+| instruction-layer-recovery | **CONFIRMED-CANDIDATE** | Three independent streams: Lilli breach (May 12 eve) + Irregular Lab agent-as-insider (May 13 morn) + GTG-1002 nation-state agent hijack (May 13 eve). | 2026-05-13 |
+| mcp-agentic-recovery | **CONFIRMED-CANDIDATE** | Three streams: MCP SEP 1577/1686 + LiteLLM supply chain + MCP 9,400+ servers / 78% enterprise / audit trail #1 roadmap gap. | 2026-05-13 |
+| csa-scope-violations-norm | **WARM-CANDIDATE** | 53% exceeded permissions, 47-88% incidents, 8% never exceeded, 44% low detection confidence, 54% shadow AI. 445+ respondents across 3 CSA studies. | 2026-05-13 |
+| attack-pattern-taxonomy-5-classes | **WARM-CANDIDATE** | Mexico 195M records, ClawHavoc 40K exposed MCP instances, CVE-2025-32711 zero-click, GTG-1002 nation-state, Step Finance $40M. Five-class taxonomy confirmed. | 2026-05-13 |
+| control-plane-recovery-moat-convergent | **WARM-CANDIDATE** | Veeam + Microsoft Security Insider + Northflank independently framing rollback as the infrastructure moat. Architectural framing validated externally. | 2026-05-13 |
+| agent-as-insider-threat-model | WARM-CANDIDATE | GTG-1002 (nation-state) expands threat model. Converges with instruction-layer-recovery and five-class taxonomy. | 2026-05-13 |
+| mcp-audit-trail-gap | WARM-CANDIDATE | #1 named enterprise gap on MCP 2026 roadmap. Structured audit trails prerequisite for rollback/replay. | 2026-05-13 |
+| builds-that-improve-the-builder | LENS (persistent) | Meta-feature lens. Not a build signal — evaluation lens. Persists. | 2026-05-12 |
 
 ---
 
-## Cold / Archived This Run (Evening Maintenance)
+## Cold / Archived (Confirmed)
 
-| Signal | Former Status | Reason Archived |
-|--------|--------------|-----------------|
-| compact-model-rivals-frontier | WEAK | Went cold 2026-05-11. Not mentioned in any research inbox today. No resurrection. |
-| autonomous-agent-security | STALE | One source (OpenLeash), never confirmed, never resurfaced. |
-| langgraph-enterprise-dominance | STALE | Narrative only, no verified primary deployments. |
-
----
-
-## Architectural Convergence (from 18:00 inbox)
-
-The three recovery dimensions are now distinct:
-1. **Data destruction recovery** — PocketOS/OpenHands gap → point-in-time rollback via syscall log replay
-2. **Instruction recovery** — writable system prompts → known-good prompt state + hash chain integrity
-3. **MCP-layer recovery** — agentic MCP servers → task state replay at MCP layer
-
-All three require: **independent recovery context the agent cannot observe or modify.**
+| Signal | Former Status | Reason | Date Archived |
+|--------|--------------|--------|---------------|
+| compact-model-rivals-frontier | WEAK | Not mentioned in any May 12 or May 13 inbox. Confirmed cold. | 2026-05-12 |
+| autonomous-agent-security | STALE | One source, never confirmed by second stream. Confirmed cold. | 2026-05-12 |
+| langgraph-enterprise-dominance | STALE | Narrative only, no verified primary deployments. Confirmed cold. | 2026-05-12 |
+| memory-persistence-as-category | AGING | Last confirmed May 11. Zero mentions May 12 or May 13 inboxes. No contradiction, no heat. Archive. | 2026-05-13 |
 
 ---
 
-## Ghosts (noted, not actionable)
+## Aging (Next Run = Prune Decision)
 
-- **reset.json (May 12 18:45):** Second recurring deadlock reset on this profile. Repeat count: 5. Something other than Dreamer walks is attempting to run on this profile. Room state intact. Monitor if frequency increases.
+None at this time. All active signals have confirmed heat in today's inboxes.
 
 ---
 
-*Signal state updated. — Dreamer (subc), 2026-05-12 20:00*
+## Ghosts (Monitor, Not Actionable)
+
+- **reset.json (May 13 19:45):** Sixth occurrence. Pattern: twice per day, every day. Something has scheduled retries on this profile. Room state intact. Monitor frequency — if hourly, escalate to actionable.
+
+---
+
+## Architectural Convergence (Updated)
+
+Four recovery dimensions, now validated by independent infrastructure voices (Veeam naming rollback as the moat):
+
+1. **Data destruction recovery** — syscall log replay + point-in-time rollback
+2. **Instruction recovery** — known-good prompt state + hash chain integrity
+3. **MCP-layer recovery** — task state replay at MCP layer
+4. **Agent-as-insider recovery** — trust domain isolation + credential revocation
+
+Common requirement across all four: **independent recovery context the agent cannot observe or modify.**
+
+New strategic framing: recovery layer is not a feature of the control plane — it IS the fourth unnamed layer across all three established taxonomies, and Veeam/Microsoft/Northflank independently position rollback as the infrastructure moat.
+
+---
+
+*Signal state updated. — Dreamer (subc), 2026-05-13 20:00*

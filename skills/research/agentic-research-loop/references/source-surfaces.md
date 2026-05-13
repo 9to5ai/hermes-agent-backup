@@ -23,16 +23,21 @@ Extraction:
 
 ### Reddit
 
-**Tool:** `browser_navigate` + `browser_snapshot`
+**Tool:** `web_search` with `site:reddit.com` (preferred) OR `browser_navigate` + `browser_snapshot`
 **Cadence:** Per run
-**Subreddits to monitor:** r/SideProject, r/LocalAI, r/LocalLLaMA, r/LocalLLM, r/automation, r/IndiaAgents, r/AI_Agents
-**Focus:** AI agents, autonomous building, local AI, multi-agent systems
+**Subreddits to monitor:** r/SideProject, r/LocalAI, r/LocalLLaMA, r/LocalLLM, r/automation, r/IndiaAgents, r/AI_Agents, r/cybersecurity
+**Focus:** AI agents, autonomous building, local AI, multi-agent systems, security incidents
 
-Key finding from experience: `web_extract` does NOT render Reddit pages. Always use `browser_navigate` + `browser_snapshot` for Reddit content.
+**Critical finding:** `web_extract` does NOT render Reddit pages — do not rely on it for Reddit content. The reliable patterns are:
+
+1. **`web_search` with `site:reddit.com`** (preferred) — search result snippets carry post titles and descriptions even when direct extraction fails. This is how Reddit signals were captured this session.
+2. **`browser_navigate` + `browser_snapshot`** (fallback) — for direct post URLs (`reddit.com/r/subreddit/comments/postid`). Slower but renders content.
+3. **`web_extract`** on Reddit — only works for direct post URLs, fails on subreddit listing pages. Do not use for listings.
 
 What to look for:
 - Novel agent patterns (OS-kernel, reversibility classification)
 - Incident reports (agent loops, cost burns, data destruction)
+- Security incidents involving AI agents (r/cybersecurity is a key signal source)
 - Product launches and roadmaps
 - Framework comparisons from real users
 

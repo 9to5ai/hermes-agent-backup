@@ -27,6 +27,11 @@ This skill is loaded when running research as a scheduled cron job or when manua
 - Profile must have a `vault/` directory with subdirectories already initialized
 - Required vault subdirectories: `health/`, `sources/`, `raw/`, `findings/`, `claims/`, `dossiers/`, `decisions/`, `runs/`
 - Source registry must exist at `vault/sources/registry.md`
+- **Pre-flight diagnostic — run this before any file operations:**
+  ```bash
+  echo "HOME=$HOME" && whoami && ls ~/.hermes/profiles/<profile>/vault/
+  ```
+  The vault is owned by the user `momo` but the agent process may run as root. All reads and writes must target the correct user home path. If `$HOME` points to `/root` but the vault is at `/Users/momo/.hermes/`, use the explicit path instead of `~/.hermes/`.
 
 ## Step-by-Step Execution
 
@@ -219,9 +224,12 @@ vault/
 - **Empty decision ledger is normal** — the ledger tracks explicit decisions, not evidence. If no decision trigger threshold was crossed, write a stale check, not a decision. The research profile's primary routing is to subc's inbox — the decision ledger is for manually recorded strategic decisions by other profiles.
 - **Don't skip the dossier update** — the dossier is the living synthesis. If you update findings/claims but not the dossier, the evidence chain is incomplete.
 - **Route before writing health check** — inbox routing is the delivery step; write it before the health check that confirms the run completed.
-- **GitHub cadence is weekly** — don't trigger GitHub on per-run cadences; check last sweep timestamp first.
+- **GitHub cadence is weekly** — don't trigger GitHub on per-run cadences; check last sweep date first.
+- **Home directory resolution on multi-user systems** — the vault path is `/Users/momo/.hermes/profiles/<profile>/vault/` but the agent process may run as root with a different `$HOME`. Always run `echo "HOME=$HOME" && whoami` as a pre-flight diagnostic before assuming `~/.hermes/` paths. The vault is owned by `momo`, not root — all file writes must target the correct user home.
+- **Stale check files can be empty but should not be skipped** — the ledger must have a stale check entry every run even if no new signals were found. An empty stale check file is valid and expected behavior when no decision threshold was crossed.
 
 ## Support Files
 
 - `references/vault-structure.md` — detailed vault schema and directory conventions
 - `references/source-surfaces.md` — how to query each surface type (web, reddit, github, x)
+- `references/ai-agent-security-sources.md` — curated knowledge bank of high-value sources for AI agent security and control plane research (URLs, key data points, query templates)

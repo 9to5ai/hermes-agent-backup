@@ -7,10 +7,10 @@
     "qa": "{}"
   },
   "loop_count": {
-    "research": 4,
-    "subc": 4,
-    "main": 4,
-    "coder": 4,
-    "qa": 4
+    "research": 0,
+    "subc": 0,
+    "main": 0,
+    "coder": 0,
+    "qa": 0
   }
 }

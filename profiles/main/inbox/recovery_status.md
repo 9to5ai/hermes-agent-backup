@@ -1,23 +1,38 @@
-# Recovery Status — 2026-05-13T02:00
+# Recovery Status — 2026-05-14 02:00
 
-## Detected
-- **Stall** on `research` profile — no new receipt in ~114 min (threshold: 60 min)
+## Summary
+- **Failures detected:** 6 (5 critical)
+- **Repaired:** 5
+- **Failed to repair:** 1
+- **All canaries:** PASS
 
-## Repair Attempt
-- Action: `hermes cron run research-loop`
-- **Outcome: failed**
+## Failures
 
-## Canary Check
-- `research` canary: **PASSED**
-  - Vault accessible
-  - Last receipt: 114 min ago (stale but vault intact)
-  - Subc room accessible
+### 1. Research — Stall (WARNING, repair FAILED)
+- Last receipt: `2026-05-14T00:12:45.053928`
+- Elapsed: 108.2 min (threshold: 60 min)
+- Repair attempt: `hermes cron run research-loop` — **FAILED**
+- Action needed: Manual intervention for research phase
 
-## Disposition
-- System is healthy despite repair action failure — canary confirms no structural issue
-- Repair failure likely due to cron invocation issue (hermes CLI not in PATH or not configured for this context)
-- No escalation required; research phase will self-recover on next scheduled run
-- Pattern logged for compounding
+### 2. Research — Deadlock (CRITICAL, repaired)
+- Repeat count: 5 cycles
+- Repair: reset injected → SUCCESS
 
-## Next Run
-- Scheduled cron will re-check in 15 min
+### 3. Subc — Deadlock (CRITICAL, repaired)
+- Repeat count: 5 cycles
+- Repair: reset injected → SUCCESS
+
+### 4. Main — Deadlock (CRITICAL, repaired)
+- Repeat count: 5 cycles
+- Repair: reset injected → SUCCESS
+
+### 5. Coder — Deadlock (CRITICAL, repaired)
+- Repeat count: 5 cycles
+- Repair: reset injected → SUCCESS
+
+### 6. QA — Deadlock (CRITICAL, repaired)
+- Repeat count: 5 cycles
+- Repair: reset injected → SUCCESS
+
+## Action Required
+Research stall repair failed. Manual review of research phase needed.

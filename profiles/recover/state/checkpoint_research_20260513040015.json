@@ -1,0 +1,1 @@
+{"profile": "research", "failure": {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 233.3, "threshold_minutes": 60, "severity": "critical"}, "repair_action": "hermes cron run research-loop", "timestamp": "2026-05-13T04:00:15.148021"}

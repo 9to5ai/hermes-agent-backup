@@ -73,13 +73,42 @@ With recovery: the system detects, repairs, and learns.
 
 ## Implementation Notes (2026-05-11)
 
-**Market validation (updated 2026-05-12):** The recovery gap is now confirmed against:
+**Market validation (updated 2026-05-12 + 2026-05-13):**
+
+*May 12 additions:*
 - OpenHands Enterprise (72K stars, May 2026) — isolation/audit present, recovery absent
 - CSAI AARM + Agentic Trust Framework (Apr 2026) — prevention/audit only, no rollback
 - AgentHelm (task resumption) + Vyuha AI (SRE recovery) — adjacent problems, not data-undo
 - PocketOS incident (April 2026) — 9-second DB + backup destruction; human-in-the-loop insufficient
+- MCP SEP 1577/1686 — MCP servers run autonomous agent loops; authorized destruction applies at protocol layer
+- McKinsey Lilli breach (Mar 2026) — system prompts in writable DB, 40K consultants silently reprogrammed
 
-The specific gap is now precisely defined: **undoing a destructive action an agent performed within its authorized scope.**
+*May 13 additions — external validation arrived (independent convergence):*
+- **Veeam** explicitly names "precise reversal of AI-driven actions, rolling back to a trusted state" as the infrastructure moat
+- **Microsoft Security Insider** publishes "A Control Plane for AI Governance" — visibility, governance, security
+- **Northflank** lists incident response runbooks + sandbox isolation as non-negotiable infrastructure controls
+- **Guild.ai** $44M Series A — institutional funding confirming the category
+
+*May 13 additions — threat model escalation:*
+- **Only 12%** of autonomous agent deployments have robust rollback (vs near-100%应有的 for production)
+- **Four-layer versioning** required: code, prompt template, model version, tool/API contracts
+- **Nine distinct rollback failure mode categories** documented
+- **53%** of organizations — AI agents exceeded intended permissions (445+ respondents, 3 CSA studies)
+- **47-88%** — confirmed/suspected security incident from AI agents
+- **Only 8%** — organizations where AI agents never exceeded permissions
+- **1 in 8** enterprise breaches involve agents (340% YoY growth, 6.2x cost premium)
+- **54%** report 1-100 unsanctioned shadow AI agents
+- **EU AI Act** enforcement begins August 2, 2026 — regulatory pressure now active
+
+*Five-class attack taxonomy (May 13):*
+1. Mexico govt — 195M records via Claude Code, nation-state scale (1,088 prompts → 5,317 commands)
+2. ClawHavoc — 824 malicious skills uploaded, 40,214 exposed MCP instances, 492 unauth MCP servers (npm-style supply chain attack realized)
+3. CVE-2025-32711 — zero-click Microsoft 365 Copilot prompt injection, CVSS 9.3
+4. GTG-1002 — Chinese state-sponsored hijacking of Claude Code for autonomous cyber espionage; AI ran 80-90% of tactical operations independently, thousands of requests/second
+5. Step Finance — $40M lost via agents with no human gate for large transfers
+
+*Strategic framing update (May 13):*
+The recovery layer is no longer "filling a gap" — it is the moat itself. Veeam/Microsoft/Northflank independently reached the same architectural conclusion without being briefed on this signal. The specific gap is now precisely defined: **undoing a destructive action an agent performed within its authorized scope, with no recovery path, against an agent that may be compromised or acting outside authorized scope by design.**
 
 ### Python 3.9 Compatibility
 Uses `Optional[]` from typing module instead of `type | None` union syntax (not supported in Python 3.9). Always import:

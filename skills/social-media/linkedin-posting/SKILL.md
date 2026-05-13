@@ -45,11 +45,7 @@ Do not use this for:
 
 3. **Open the composer**
    - Click the `Start a post` button from the snapshot.
-   - If the accessibility snapshot does not show the modal clearly, use `browser_vision(annotate=true)` and look for:
-     - `What do you want to talk about?`
-     - `Text editor for creating content`
-     - `Post to Anyone`
-     - `Post` button
+   - The composer modal elements (textbox, Post button) typically appear directly in the next `browser_snapshot` without needing vision analysis — refs like `Text editor for creating content` and `Post` show up in the accessibility tree. Do NOT rely on `browser_vision(annotate=true)` to locate modal elements in this setup; it returns generic text rather than page-specific annotations. Use `browser_snapshot` to find the composer refs and proceed.
 
 3. **Enter the post text**
    - Type the exact user-supplied copy into the composer text editor.
@@ -57,9 +53,8 @@ Do not use this for:
    - Use `browser_type` on that textbox if available.
 
 4. **Publish**
-   - After typing, refresh with `browser_snapshot` or `browser_vision(annotate=true)`.
+   - After typing, take a `browser_snapshot` to confirm the Post button ref is visible.
    - Click the enabled blue `Post` button in the composer.
-   - If normal `browser_click` says the button is blocked, take a vision snapshot and use the newly annotated ref for the visible modal `Post` button. LinkedIn’s accessibility tree can keep stale underlying refs while the modal is visually active.
 
 5. **Verify and return URL**
    - Wait for/inspect the success alert.
@@ -87,7 +82,7 @@ Do not use this for:
 
 2. **Posting to Telegram by mistake.** If Jun says “post this” in reply to a draft and the destination is ambiguous, ask or infer from context. If he explicitly says LinkedIn, do not use `send_message`.
 
-3. **Stale or blocked refs.** LinkedIn modals may not appear fully in compact snapshots. Use `browser_vision(annotate=true)` to identify the actual modal textbox/post button.
+3. **Stale or blocked refs.** LinkedIn modals may not appear fully in compact snapshots. After clicking "Start a post", use `browser_snapshot` (not `browser_vision`) to find the composer textbox and Post button refs. `browser_vision` returns generic explanations rather than page-specific annotations in this setup — do not use it to locate modal elements.
 
 4. **Clicking Post too early.** Ensure the post body is present and the Post button is enabled (blue) before clicking.
 

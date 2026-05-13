@@ -241,3 +241,195 @@
 [2026-05-13T01:30:57.284944] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 84.0, "threshold_minutes": 60, "severity": "warning"}
 [2026-05-13T01:45:27.186590] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 98.5, "threshold_minutes": 60, "severity": "warning"}
 [2026-05-13T02:00:53.159553] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 113.9, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T02:16:06.500792] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 129.2, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T02:16:06.500804] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T02:16:06.500808] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T02:16:06.500811] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T02:16:06.500813] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T02:16:06.500816] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T02:30:38.188259] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 143.7, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T02:45:44.342497] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 158.8, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T03:01:06.216560] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 174.2, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T03:15:57.116142] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 189.0, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T03:30:23.676575] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 203.5, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T03:30:23.676583] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T03:30:23.676586] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T03:30:23.676589] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T03:30:23.676592] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T03:30:23.676594] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T03:45:53.698697] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 219.0, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T04:00:15.118079] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 233.3, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T04:15:59.180184] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 249.0, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T04:30:22.017742] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 263.4, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T04:45:29.061922] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 278.5, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T04:45:29.061930] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T04:45:29.061933] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T04:45:29.061936] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T04:45:29.061938] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T04:45:29.061941] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T05:00:52.706248] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 293.9, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T05:15:22.398955] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 308.4, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T05:15:26.530635] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 308.5, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T05:30:46.202725] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 323.8, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T05:45:12.878623] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T00:06:56.303561", "elapsed_minutes": 338.3, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T05:45:12.878631] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T05:45:12.878635] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T05:45:12.878637] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T05:45:12.878640] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T05:45:12.878643] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T07:00:53.224464] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T07:00:53.224475] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T07:00:53.224482] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T07:00:53.224485] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T07:00:53.224488] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T07:16:07.065991] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 69.8, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T07:30:29.702794] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 84.2, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T07:45:50.168705] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 99.5, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T08:04:03.114716] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 117.8, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T08:15:57.766623] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 129.7, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T08:15:57.766632] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T08:15:57.766635] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T08:15:57.766638] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T08:15:57.766640] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T08:15:57.766643] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T08:30:26.964600] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 144.2, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T08:45:55.508252] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 159.6, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T09:00:23.657465] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 174.1, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T09:15:37.209223] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 189.3, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T09:31:01.993532] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 204.7, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T09:31:01.993541] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T09:31:01.993544] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T09:31:01.993547] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T09:31:01.993550] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T09:31:01.993552] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T09:45:34.608035] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 219.3, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T10:01:02.529658] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 234.7, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T10:16:04.112410] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 249.8, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T10:30:30.656342] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 264.2, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T10:46:01.652536] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 279.7, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T10:46:01.652551] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T10:46:01.652555] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T10:46:01.652558] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T10:46:01.652562] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T10:46:01.652565] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T11:00:36.784493] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 294.3, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T11:16:00.385180] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 309.7, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T11:30:41.346212] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 324.4, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T11:46:07.460795] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T06:06:17.831941", "elapsed_minutes": 339.8, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T12:09:53.045598] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T12:09:53.045605] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T12:09:53.045608] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T12:09:53.045611] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T12:09:53.045614] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T13:15:41.702455] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 67.5, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T13:15:41.702464] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T13:15:41.702467] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T13:15:41.702470] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T13:15:41.702472] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T13:15:41.702475] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T13:30:16.211553] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 82.1, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T13:30:20.953470] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 82.1, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T13:46:00.348649] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 97.8, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T13:46:04.726179] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 97.9, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T14:00:35.549884] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 112.4, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T14:00:35.549895] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T14:00:35.549899] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T14:00:35.549902] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T14:00:35.549904] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T14:00:35.549907] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T14:16:04.088787] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 127.9, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T14:30:31.241631] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 142.3, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T14:45:59.450537] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 157.8, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T15:00:27.153816] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 172.2, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T15:15:54.731673] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 187.7, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T15:15:54.731684] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T15:15:54.731688] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T15:15:54.731690] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T15:15:54.731693] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T15:15:54.731695] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T15:30:31.177027] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 202.3, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T15:30:35.836735] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 202.4, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T15:46:06.202820] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 217.9, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T16:00:39.751596] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 232.5, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T16:15:57.070885] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 247.7, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T16:15:57.070892] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T16:15:57.070896] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T16:15:57.070898] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T16:15:57.070906] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T16:15:57.070908] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T16:30:36.673067] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 262.4, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T16:46:03.164413] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 277.8, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T16:46:21.411175] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 278.1, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T17:00:51.049975] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 292.6, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T17:15:21.328838] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 307.1, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T17:15:21.328851] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T17:15:21.328855] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T17:15:21.328858] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T17:15:21.328860] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T17:15:21.328863] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T17:30:53.624034] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 322.7, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T17:45:20.196709] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T12:08:12.494360", "elapsed_minutes": 337.1, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T18:30:46.545119] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T18:30:46.545127] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T18:30:46.545130] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T18:30:46.545132] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T18:30:46.545135] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T19:15:47.191838] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 65.1, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T19:30:20.691072] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 79.6, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T19:45:51.426893] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 95.1, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T19:45:51.426901] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T19:45:51.426904] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T19:45:51.426907] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T19:45:51.426909] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T19:45:51.426912] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T20:06:19.319769] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 115.6, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-13T20:15:37.859476] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 124.9, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T20:31:06.062510] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 140.4, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T20:45:34.012699] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 154.8, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T21:00:09.035959] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 169.4, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T21:00:09.035967] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T21:00:09.035970] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T21:00:09.035973] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T21:00:09.035976] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T21:00:09.035978] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T21:15:22.812049] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 184.7, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T21:30:56.744714] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 200.2, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T21:45:29.331766] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 214.8, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T22:00:58.369680] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 230.2, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T22:01:03.271720] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 230.3, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T22:01:03.271731] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T22:01:03.271735] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T22:01:03.271738] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T22:01:03.271740] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T22:01:03.271743] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T22:16:05.987922] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 245.4, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T22:16:05.987933] {"type": "deadlock", "profile": "research", "repeat_count": 6, "severity": "critical"}
+[2026-05-13T22:16:05.987937] {"type": "deadlock", "profile": "subc", "repeat_count": 6, "severity": "critical"}
+[2026-05-13T22:16:05.987940] {"type": "deadlock", "profile": "main", "repeat_count": 6, "severity": "critical"}
+[2026-05-13T22:16:05.987942] {"type": "deadlock", "profile": "coder", "repeat_count": 6, "severity": "critical"}
+[2026-05-13T22:16:05.987945] {"type": "deadlock", "profile": "qa", "repeat_count": 6, "severity": "critical"}
+[2026-05-13T22:30:41.218310] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 260.0, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T22:45:08.345380] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 274.4, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T23:00:41.541966] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 290.0, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T23:15:56.803998] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 305.2, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T23:30:37.462069] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 319.9, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-13T23:30:37.462080] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T23:30:37.462084] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T23:30:37.462086] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T23:30:37.462089] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T23:30:37.462091] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-13T23:45:12.482171] {"type": "stall", "profile": "research", "last_receipt": "2026-05-13T18:10:43.406980", "elapsed_minutes": 334.5, "threshold_minutes": 60, "severity": "critical"}
+[2026-05-14T00:46:02.660452] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-14T00:46:02.660464] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-14T00:46:02.660472] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-14T00:46:02.660476] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-14T00:46:02.660479] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}
+[2026-05-14T01:15:25.200718] {"type": "stall", "profile": "research", "last_receipt": "2026-05-14T00:12:45.053928", "elapsed_minutes": 62.7, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-14T01:31:01.187914] {"type": "stall", "profile": "research", "last_receipt": "2026-05-14T00:12:45.053928", "elapsed_minutes": 78.3, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-14T01:45:31.892198] {"type": "stall", "profile": "research", "last_receipt": "2026-05-14T00:12:45.053928", "elapsed_minutes": 92.8, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-14T02:00:56.672619] {"type": "stall", "profile": "research", "last_receipt": "2026-05-14T00:12:45.053928", "elapsed_minutes": 108.2, "threshold_minutes": 60, "severity": "warning"}
+[2026-05-14T02:00:56.672629] {"type": "deadlock", "profile": "research", "repeat_count": 5, "severity": "critical"}
+[2026-05-14T02:00:56.672632] {"type": "deadlock", "profile": "subc", "repeat_count": 5, "severity": "critical"}
+[2026-05-14T02:00:56.672635] {"type": "deadlock", "profile": "main", "repeat_count": 5, "severity": "critical"}
+[2026-05-14T02:00:56.672637] {"type": "deadlock", "profile": "coder", "repeat_count": 5, "severity": "critical"}
+[2026-05-14T02:00:56.672640] {"type": "deadlock", "profile": "qa", "repeat_count": 5, "severity": "critical"}

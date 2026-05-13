@@ -1,0 +1,24 @@
+{
+  "phase": "canary_main",
+  "timestamp": "2026-05-13T08:15:57.995359",
+  "result": {
+    "outcome": "reverted",
+    "profile": "main",
+    "canaries_run": 1,
+    "results": [
+      {
+        "canary": "sample_canary.py",
+        "profile": "main",
+        "outcome": "fail",
+        "elapsed_seconds": 0.02,
+        "stdout": "PASS: Vault accessible\nFAIL: Last receipt too old: 130min\nPASS: Subc room accessible\n",
+        "stderr": "",
+        "timestamp": "2026-05-13T08:15:57.992940"
+      }
+    ],
+    "revert": {
+      "outcome": "no_checkpoint",
+      "profile": "main"
+    }
+  }
+}
